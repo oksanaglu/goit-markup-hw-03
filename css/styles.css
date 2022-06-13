@@ -1,0 +1,415 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста #757575 */
+/* цвет основного фона белый #FFFFFF */
+/* акцент 2196F3 */
+/* вторичный цвет фона 2F303A */
+
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --secondary-bg-gray-color: #2F303A;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+
+    
+}
+
+/* Утилиты */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+    margin-top: 0 auto;
+}
+
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Стили для html */
+
+
+
+/* Шапка сайта Site nav */
+
+.logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+
+    color: var(--accent-color);
+
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.2x;
+    text-decoration: none;
+    
+}
+
+.logo .second {
+    color: var(--primary-text-color);
+}
+
+.page-header .main-nav {
+    display: flex;
+    
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+    
+}
+
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+    margin-right: 0;
+}
+
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.auht-nav .link {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+}
+
+.auht-nav .link:hover,
+.auht-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.auht-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auht-nav .item + .item {
+    margin-left: 50px;
+}
+
+
+
+
+/* Герой */
+
+.hero {
+    margin-bottom: 94px;
+
+    color: var(--primary-white-color);
+    background-color: var(--secondary-bg-gray-color);
+
+    text-align: center;
+    
+
+
+}
+
+.hero .title {
+    margin-bottom: 30px;
+    margin-top: 0;
+
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    letter-spacing: 0.06em;
+
+    
+
+
+}
+
+/* button */
+.button {
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: none;
+   
+
+    
+}
+
+.button.primary {
+    padding: 10px 32px;
+    min-width: 200px;
+}
+
+
+
+
+/* Преимущества feature-list*/
+
+.feature-list .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+   
+    color: var(--title-text---color);
+
+    text-transform: uppercase
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+} 
+
+.feature-list .text {
+    margin-top: 0;
+    
+
+    color: #757575;
+
+    font-size: 14px;
+    line-height: 1.72;
+    
+}
+
+.feature-list {
+    display: flex;
+}
+
+/* Занятия */
+
+.section {
+   
+   padding-top: 94px;
+   padding-bottom: 94px;
+    
+}
+
+.section .no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.section .caption {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1, 17;
+    text-align: center;
+   
+
+}
+
+
+/* Команда */
+
+.team .title {
+    margin-bottom: 10px;
+    margin-top: 0;
+
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    
+}
+
+.team .text {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: var(--title-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    
+}
+
+
+
+
+
+/* footet */
+
+.logo .secondary {
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    color: var(--primary-white-color);
+    
+
+}
+
+.footer {
+    background-color: var(--secondary-bg-gray-color);
+}
+
+
+
+
+
+.contact .link {
+    margin-bottom: 9px;
+
+    color: var(--primary-white-color);
+
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    font-style: normal;
+    
+
+}
+
+
+.contact .link:hover,
+.contact .link:focus {
+    color: var(--accent-color);
+}
+
+.contact .info {
+    margin-bottom: 9px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.72;
+    font-style: normal;
+    
+
+}
+
+.contact .info:hover,
+.contact .info:focus {
+    color: var(--accent-color);
+}
+
+/* Стили для Портфолио */
+
+.button.secondary {
+    display: block;
+    padding: 6px, 22px;
+    margin-bottom: 34px;
+
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;   
+    
+}
+
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+
+.list.filter {
+    display: flex;
+}
+
+.list.filter.item:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+.projects .title {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+}
+
+.projects .text {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    color: var(--title-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    
+}
+
+.projects .link {
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+    
+}
+
