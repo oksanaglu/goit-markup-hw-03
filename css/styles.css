@@ -228,6 +228,7 @@ body {
 
 .feature-list {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
 }
 
@@ -282,6 +283,10 @@ body {
     padding-bottom: 0;
 }
 
+.section.no-padding.work {
+    padding-top: 0;
+}
+
 .section .caption {
     margin-top: 0;
     margin-bottom: 50px;
@@ -304,7 +309,8 @@ body {
 .img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: auto; 
+   
 }
 
 .caption-img:nth-child(2) {
@@ -455,14 +461,14 @@ body {
 
 /* Стили для Портфолио */
 
-
+/* Фильтр меню */
 
 .button.secondary {
+    
     display: flex;
-    justify-content: center;
+    
     padding: 6px, 22px;
     margin-right: 0;
-   
 
     color: var(--primary-text-color);
     background-color: var(--secondary-dg-but-color);
@@ -473,6 +479,7 @@ body {
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
+    align-items: center;
     
 }
 
@@ -527,10 +534,15 @@ body {
 .list.filter > .item:nth-child(n+2){
     margin-left: 8px;
 }
+
 /* .list.filter.item:not(:last-child) { 
     margin-right: 8px;
 }
-/*  */
+
+
+
+
+/* Элементы  */
 
 .projects .title {
     margin-top: 0;
@@ -547,7 +559,7 @@ body {
 
 .projects .text {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 
     color: var(--title-text-color);
 
@@ -557,29 +569,39 @@ body {
     
 }
 
-
+.link {
+    text-decoration: none;
+    display: block;
+}
 
 .projects.link.list {
     display: flex;
     flex-wrap: wrap;
-    text-decoration: none;
-    margin-top: 0;
-    margin-bottom: 30px;
+    padding-left: 0;
+   
+  
    
 }
 
 .projects-element {
-    
-    width: 370px;
-    margin-right: 30px;
-    
+
+    min-width: 370px;
+    display: block;
+
 }
 
-.projects-element:nth-child(-n+6) {
+.projects-element:nth-child(-n + 6) {
     margin-bottom: 30px;
+
+}
+  
+.projects-element:nth-child(3n+2) {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-/* .projects-element:nth-child(3n) { 
+  /*  
+.projects-element:nth-child(3n) { 
     margin-right: 0;
 }
 */
@@ -588,4 +610,5 @@ body {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
     border-top: none;
+    
 }
