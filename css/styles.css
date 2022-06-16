@@ -68,8 +68,8 @@ img {
 /* Шапка сайта Site nav */
 
 .logo {
-    margin-top: 24px;
-    margin-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
     color: var(--accent-color);
 
@@ -90,7 +90,7 @@ img {
 }
 
 .page-header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 
 }
 
