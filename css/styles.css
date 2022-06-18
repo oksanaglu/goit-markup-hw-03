@@ -587,7 +587,7 @@ img {
 
 
 .projects-element {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
     display: block;
 
 }
